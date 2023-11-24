@@ -16,15 +16,15 @@
             <div class="heightWeight">
                 <div class="inputHeight">
                   <label for="height">Height(cm)</label>
-                  <input type="number" id="height" required>
+                  <input type="number" id="height" min="50" required>
                 </div>
                 <div class="inputWeight">
                   <label for="weight">Weight(kg)</label>
-                  <input type="number" id="weight" required>
+                  <input type="number" id="weight" min="1" required>
                 </div>
             </div>
             <div class="buttons">
-                <input type="submit" value="Calculate" id="calculate" onclick="calculate()">
+                <input type="submit" value="Calculate" id="calculate">
                 <input type="reset" value="Reset" id="reset">
             </div>
         </form>
@@ -45,7 +45,7 @@
     </div>
     <div class="about-bmi">
         <h2>About BMI</h2>
-        <p>BMI (body mass index) is a measure of whether you're a healthy weight for your height. This calculator should only be used by adults (pregnant or lactating women should not rely on these BMI readings), and no action should be taken based on its values other than to consult a suitably qualified person such as a doctor. </p>
+        <p>BMI (body mass index) is a measure of whether you're a healthy weight for your height. <b>This calculator should only be used by adults</b> (pregnant or lactating women should not rely on these BMI readings), and no action should be taken based on its values other than to consult a suitably qualified person such as a doctor. </p>
         <br>
         <p>The calculator will give you an idea of how your weight compares to common values. Body Mass Index (or BMI) is calculated as your weight (in kilograms) divided by the square of your height (in metres) or BMI = Kg/M2.</p> 
         <br>

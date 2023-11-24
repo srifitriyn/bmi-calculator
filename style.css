@@ -162,11 +162,15 @@ footer {
     .box {
         flex-direction: column;
     }
+    .heightWeight label {
+        font-size: smaller;
+    }
     .input-form {
         width: 100%;
     }
     footer {
         flex-direction: column;
         gap: 12px;
+        text-align: center;
     }
 }

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2B2C34;
+}
+body {
+    display: flex;
+    background: linear-gradient(180deg, #D988B9 5.08%, #FFF 50.28%);
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    min-height: 100vh;
+}
+.box {
+    padding: 4vh 8vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.title {
+    padding: 8vh 8vw;
+    width: 100%;
+    text-align: center;
+}
+.title h1{
+    font-size: 48px;
+}
+.title p {
+    font-size: 24px;
+}
+.input-form {
+    height: fit-content;
+    width: 400px;
+    padding: 40px 40px;
+    background: #fafafa;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 2px 5px 0px rgba(44,59,80,0.25);
+}
+.heightWeight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputWeight, .inputHeight {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.inputHeight {
+    margin-right: 20px;
+}
+.inputWeight label, .inputHeight label {
+    display: block;
+    font-size: medium;
+    color: #000;
+    margin-bottom: 20px;
+}
+.inputWeight input, .inputHeight input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    width: 50%;
+    text-align: center;
+    font-size: medium;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+.buttons input {
+    cursor: pointer;
+    color: #fff;
+    background: #D988B9;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 50%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+#reset {
+    background-color: transparent;
+    color: #D988B9;
+    border: 1.5px solid #D988B9;
+}
+#calculate:hover {
+    background: #ca5c9e;
+}
+#reset:hover {
+    color: #ca5c9e;
+    border: 1.5px solid #ca5c9e;
+}
+.bmi-info {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.result, .bmi-range {
+    padding: 20px 20px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px 0px rgba(44,59,80,0.25);
+}
+h2 {
+    margin-bottom: 15px;
+}
+.result #result {
+    font-size: 32px;
+    color: #D988B9;
+    display: inline-block;
+}
+.result p {
+    color: inherit;
+}
+.result-comment {
+    color: #D988B9;
+    font-size: larger;
+}
+.about-bmi {
+    padding: 4vh 8vw;
+}
+.about-bmi p {
+    text-align: justify;
+}
+.about-bmi a {
+    color: #D988B9;
+}
+footer {
+    min-height: 40px;
+    display: flex;
+    padding: 28px 84px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch; 
+    background: var(--Light-Grey, #EFF0F3);
+    box-shadow: 4px 6px 13px 0px rgba(215, 215, 215, 0.25);
+}
+.socmed-icon {
+    display: flex;
+    gap: 20px;
+}
+.copyright {
+    font-size: smaller;
+}
+@media (max-width: 572px) {
+    body {
+        gap: 20px;
+    }
+    .title h1{
+        font-size: 36px;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .input-form {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
